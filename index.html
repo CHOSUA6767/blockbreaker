@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>벽돌깨기 게임</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>BRICK BREAKER</h1>
+      <div class="stats">
+        <span class="score">점수: <strong id="score">0</strong></span>
+        <span class="lives">생명: <strong id="lives">3</strong></span>
+      </div>
+    </header>
+
+    <div class="game-wrapper">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h2>벽돌깨기</h2>
+        <p>패들을 움직여 공을 받아 벽돌을 깨세요!</p>
+        <p class="controls">조작: 마우스 또는 ← → 방향키</p>
+        <button id="startBtn" class="game-btn">시작하기</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>게임 오버</h2>
+        <p>최종 점수: <strong id="finalScore">0</strong></p>
+        <button id="restartBtn" class="game-btn">다시 하기</button>
+      </div>
+
+      <div id="winScreen" class="overlay hidden">
+        <h2>승리!</h2>
+        <p>모든 벽돌을 깼습니다!</p>
+        <p>점수: <strong id="winScore">0</strong></p>
+        <button id="nextLevelBtn" class="game-btn">다음 레벨</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "blockbreaker",
+  "version": "1.0.0",
+  "description": "벽돌깨기 게임 - 다른 사람과 공유해서 플레이",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "main": "server.js"
+}
